@@ -43,7 +43,7 @@ BinomialTree::BinomialTree(double price, double _Vol, int _n, double _tstep)
         Node* currNode = tree[i];
         currTime += tstep;
 
-        for(int j=0; j <= i; i++, currNode++) {
+        for(int j=0; j <= i; j++, currNode++) {
             if (!j) {
                 currNode->price = tree[i-1][j].price / upfactor;
                 currNode->time = currTime;

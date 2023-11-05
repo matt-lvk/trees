@@ -35,4 +35,4 @@
 *.ipa
 *.dSYM.zip
 *.dSYM
-*.vscode
+**/.vscode/

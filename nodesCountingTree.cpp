@@ -1,9 +1,4 @@
-//
-//  nodesCountingTree.cpp
-//  trees
-//
-//  Created by Matthew liew on 07.11.23.
-//
+
 
 #include <iostream>
 using namespace std;

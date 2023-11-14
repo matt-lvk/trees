@@ -13,6 +13,17 @@ using namespace std;
 
 
 int main() {
+
+    TreeNode root(5);
+    root.insertIntoBST(2);
+    root.insertIntoBST(6);
+
+    cout << "Binary Tree: ";
+    root.printBinaryTree(root);
+    cout << endl;
+
+
+    /*
     shared_ptr<TreeNode> root = make_shared<TreeNode>(5);
     root->left = make_shared<TreeNode>(2);
     root->right = make_shared<TreeNode>(6);
@@ -31,6 +42,6 @@ int main() {
     std::cout << "Binary Tree: ";
     root->printBinaryTree(root);
     std::cout << std::endl;
-    
+    */
     return 0;
 }

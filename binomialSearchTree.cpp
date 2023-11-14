@@ -19,7 +19,7 @@ shared_ptr<TreeNode> TreeNode::searchBST(shared_ptr<TreeNode> root, const int& v
         return searchBST(root->right, val);
     }
 }
-
+/*
 shared_ptr<TreeNode> TreeNode::insertIntoBST(shared_ptr<TreeNode> root, int val) {
     if (root == nullptr) {
         return std::make_shared<TreeNode>(val);
@@ -33,8 +33,10 @@ shared_ptr<TreeNode> TreeNode::insertIntoBST(shared_ptr<TreeNode> root, int val)
 
     return root;
 }
+*/
 
-void TreeNode::printBinaryTree(shared_ptr<TreeNode> root) {
+
+void TreeNode::printBinaryTree(T root) {
     if (root == nullptr) {
         return;
     };

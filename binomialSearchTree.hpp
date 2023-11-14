@@ -23,6 +23,8 @@ public:
     std::shared_ptr<TreeNode> searchBST(std::shared_ptr<TreeNode> root, const int& val);
     
     static std::shared_ptr<TreeNode> insertIntoBST(std::shared_ptr<TreeNode> root, int val);
+
+    std::shared_ptr<TreeNode> deleteNode(std::shared_ptr<TreeNode> root, int val);
     
     void printBinaryTree(std::shared_ptr<TreeNode> root);
     

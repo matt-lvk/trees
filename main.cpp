@@ -13,6 +13,7 @@ using namespace std;
 
 
 int main() {
+    /*
     shared_ptr<TreeNode> root = make_shared<TreeNode>(5);
     root->left = make_shared<TreeNode>(2);
     root->right = make_shared<TreeNode>(6);
@@ -28,9 +29,30 @@ int main() {
     }
     
     
-    std::cout << "Binary Tree: ";
+    cout << "Binary Tree: ";
     root->printBinaryTree(root);
-    std::cout << std::endl;
+    cout << std::endl;
+    */
+
+    std::shared_ptr<TreeNode> root = std::make_shared<TreeNode>(5);
+    root->left = std::make_shared<TreeNode>(3);
+    root->right = std::make_shared<TreeNode>(7);
+    root->left->left = std::make_shared<TreeNode>(2);
+    root->left->right = std::make_shared<TreeNode>(4);
+    root->right->left = std::make_shared<TreeNode>(6);
+    root->right->right = std::make_shared<TreeNode>(8);
+
+    std::cout << "Original Tree:" << std::endl;
+    root->printBinaryTree(root);
+
+    // Delete a node (e.g., node with value 5)
+    int valueToDelete = 5;
+    root = root->deleteNode(root, valueToDelete);
+
+    std::cout << "\nTree after deleting node with value " << valueToDelete << ":" << std::endl;
+    root->printBinaryTree(root);
+
+    return 0;
     
     return 0;
 }
